@@ -1,21 +1,23 @@
 {
-  "name": "javascript-action",
-  "description": "GitHub Actions JavaScript Template",
-  "version": "0.0.0",
-  "author": "",
+  "name": "pr-comment",
+  "description": "Adds PR changes as comment",
+  "version": "1.0.0",
+  "author": "Aqueef",
   "private": true,
-  "homepage": "https://github.com/actions/javascript-action#readme",
+  "homepage": "https://github.com/aqueefcs/gt-action#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "url": "git+https://github.com/aqueefcs/gt-action.git"
   },
   "bugs": {
-    "url": "https://github.com/actions/javascript-action/issues"
+    "url": "https://github.com/aqueefcs/gt-action/issues"
   },
   "keywords": [
     "GitHub",
     "Actions",
-    "JavaScript"
+    "JavaScript",
+    "Pull Request",
+    "Comment"
   ],
   "exports": {
     ".": "./dist/index.js"
@@ -74,7 +76,6 @@
     "eslint": "^8.51.0",
     "eslint-plugin-github": "^4.10.1",
     "eslint-plugin-jest": "^27.4.2",
-    "jest": "^29.7.0",
     "make-coverage-badge": "^1.2.0",
     "prettier": "^3.0.3"
   }

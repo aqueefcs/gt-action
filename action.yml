@@ -1,19 +1,26 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
+name: 'pr-comment'
+description: 'Adds PR changes as comment'
 author: 'Your name or organization here'
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  owner:
+    description: 'The owner if the repository (user or org)'
     required: true
-    default: '1000'
 
-# Define your outputs here.
-outputs:
-  time:
-    description: 'Your output description here'
+  repo:
+    description: 'The repository name',
+    requiresd: true
+  
+  pr_number:
+    description: 'The number of the pull request'
+    required: true
+  
+  token:
+    description: 'The token to use to access the the GITHUB API'
+    required: true
+
 
 runs:
-  using: node20
+  using: 'node16'
   main: dist/index.js
