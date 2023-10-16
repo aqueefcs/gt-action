@@ -2,7 +2,7 @@ name: Continuous Integration
 
 on:
   pull_request:
-  types: [opened, reopened, synchronized]
+    types: [opened, reopened, synchronized]
 
 jobs:
   test:
